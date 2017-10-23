@@ -1,0 +1,226 @@
+*{
+	margin:0;
+	padding:0;
+	list-style: none;
+	box-sizing:border-box;
+}
+body, button, input, select, textarea { color:#454545; }  
+body{
+	font:18px/1.5 "Helvetica Neue",
+	Helvetica,Arial,
+	"Microsoft Yahei",
+	"Hiragino Sans GB",
+	"Heiti SC",
+	"WenQuanYi Micro Hei",
+	sans-serif;
+}
+body { 
+	word-wrap:break-word; 
+	word-break:break-all; 
+	height:100%; 
+	position: relative;
+	overflow-x: hidden;
+	font-family: "微软雅黑";
+	} 
+button, input, select, textarea, h1, h2, h3, h4, h5, h6 { font-size:100%; }  
+h2, h3 { font-size:20px; }  
+button, input, select, textarea, label { 
+	vertical-align:middle; 
+	outline:none; 
+	resize:none;
+	display: block;
+}  
+button {
+	text-align: center;
+	border :none;
+}
+img { 
+	vertical-align:middle;
+	border:none; 
+	display:inline-block;
+	width: 100%;
+}  
+ul,li{
+	list-style: none;
+}
+ul,li{list-style-type: none;}
+
+/*IE8去除虚线框*/
+a:focus{outline: none;}
+a { 
+	text-decoration:none;
+	vertical-align:baseline; 
+	cursor:pointer;
+	color: #222;
+	display: block;
+}  
+/*清除浮动 2种方式*/
+.clear{clear: both;}
+.clear:after{
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+/*.bg_shadow,
+.tabcon,
+.module li{
+	-webkit-box-shadow: 0 0 20px #cccccc;
+	-moz-box-shadow: 0 0 20px #cccccc;
+	box-shadow: 0 0 20px #cccccc;
+	filter: 
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=20, Direction=90),
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=20, Direction=180);
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=20, Direction=0),
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=20, Direction=270);
+}
+.tabcon{
+	background :rgba(255,255,255,0.8);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#6f000000,endColorstr=#6f000000); 
+}
+.contact li{
+	-webkit-box-shadow: 0 0 3px #cccccc;
+	-moz-box-shadow: 0 0 3px #cccccc;
+	box-shadow: 0 0 3px #cccccc;
+	filter: 
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=3, Direction=90),
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=3, Direction=180);
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=3, Direction=0),
+	progid:DXImageTransform.Microsoft.Shadow(Color=#cccccc, Strength=3, Direction=270);
+	transition:box-shadow 1s ease;
+}*/
+/*.problem .prob_con:hover,
+.bg_wrap .about:hover{
+	transition:box-shadow 1s ease;
+}
+*/
+.head{
+	width: 831px;
+	margin: 0 auto;
+}
+.date{
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+	background-color: #E72526;
+	color: #fff;
+	overflow: hidden;
+	font-size: 13px;
+}
+.date .left{
+	display: inline-block;
+	float: left;
+	padding-left: 36px;
+}
+.date .right{
+	display: inline-block;
+	float: right;
+	padding-right: 36px;
+}
+.news{
+	width: 751px;
+	margin: 0 auto;
+}
+.news li{
+	margin-top: 10px;
+	overflow: hidden;
+}
+.news li .l,.r{
+	float: left;
+}
+.news li .l{
+	width: 216px;
+}
+.news li .r{
+	width: 525px;
+	height: 151px;
+	position: relative;
+}
+.news li .r h6{
+	font-size: 15px;
+	color: #EE7B00;
+	margin-bottom: 5px;
+}
+.news li .r .tit{
+	font-size: 13px;
+	color: #0051A5;
+	font-weight: bold;
+}
+.news li .r p{
+	color: #777;
+	font-size: 13px;
+}
+.news li .r .link{
+	width: 88px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #0051A5;
+	font-size: 12px;
+	color: #fff;
+	border-radius: 8px;
+	text-align: center;
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 5px;
+}
+.contact{
+	width: 751px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.contact .cont-l,.cont-r{
+	width: 50%;
+	float: left;
+}
+.contact img{
+	width: auto;
+	margin: 25px auto 0;
+	display: block;
+}
+.table{
+	width: 751px;
+	margin: 15px auto 35px;
+}
+.table img{
+	width: 100%;
+}
+.table p{
+	font-size: 12px;
+	color: #333;
+	margin-top: 5px;
+	font-weight: bold;
+}
+.foot{
+	width: 751px;
+	margin: 50px auto 37px;
+	overflow: hidden;
+}
+.foot .fl,.fr,.fm{
+	float: left;
+}
+.foot .fl{
+	width: 32%;
+}
+.foot .fm{
+	width: 20%;
+}
+.foot .fr{
+	width: 48%;
+}
+.foot .fm .number p{
+	font-size: 13px;
+	color: #777;
+	line-height: 13px;
+	text-indent: 10px;
+}
+.foot .fm .number a{
+	font-size: 12px;
+	color: #E72526;
+	text-indent: 10px;
+}
+.foot .fr img{
+	width: 53%;
+	margin-left: 47%;
+}
